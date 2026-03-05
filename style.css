@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+#container {
+    width: 600px;
+    height: 800px;
+    overflow: hidden;
+    border: 2px solid #333;
+    background-color: #ddd;
+    position: relative;
+}
+
+#paper {
+    width: 100%;
+    height: 200%; /* Pour permettre le scroll/simuler une longue feuille */
+    background-image: url('https://img.freepik.com/free-photo/grunge-vintage-old-paper-background_1373-431.jpg?semt=ais_hybrid');
+    background-size: cover;
+    transition: transform 0.5s ease; /* Animation pour le mouvement */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#text {
+    width: 90%;
+    height: 100%;
+    margin: 5% auto;
+    background: transparent;
+    border: none;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    resize: none;
+    outline: none;
+    white-space: pre-wrap;
+    overflow: visible; /* Permet le scroll */
+}
+
+#export {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#export:hover {
+    background-color: #555;
+}
